@@ -1,0 +1,1 @@
+# 3-Ways-of-Writing-Function-in-Javascript
