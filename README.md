@@ -2,53 +2,60 @@
 
 3-Ways of Writing Function in Javascript
 
-// 1. Function Declaration
-function tampilPesan1(nama) {
- alert('Halo' + nama);
-}
-tampilPesan1('Godam');
-//akan pop up alert:
-//Halo Godam
+1. Function Declaration
 
-// 2. Function Expression
-let tampilPesan2 = function(nama) {
- alert('Halo' + nama);
-}
-tampilPesan2('Palu');
-//akan pop up alert:
-//Halo Palu
+    function popup1(name) {
+      alert('Halo' + ' ' + name);
+    }
+    popup1('John');
 
-// 3. Arrow Function
-// a. Multilines
-const tampilNama3 = (nama, waktu) => {
- return `Selamat ${waktu}, ${nama}`;
-} 
+2. Function Expression
 
-console.log(tampilNama3("Gada", "Malam"));
+    let popup2 = function(name) {
+      alert('Halo' + ' ' + name);
+    }
+    popup2('John');
 
-//output di console:
-//Selamat Malam, Gada
+3. Arrow Function
 
-// b. Single Line
-//Untuk function dengan satu parameter dan satu baris return, bisa dibuat simple, parameter tidak perlu (), "return" juga tidak perlu ditulis:
+ a. Multilines
 
-const tampilNama4 = nama => `Halo ${nama}`;
+    const example1 = (name, time) => {
+      return `Good ${time}, ${name}`;
+    } 
 
-console.log(tampilNama4("Semar"));
+    console.log(example1("John", "Night"));
 
-//output di console:
-//Halo Semar
+b. Single Line
 
-//Untuk function tanpa parameter harus digunakan ()
+   Function with only one parameter and one line of return can be simplified. No need parantheses () for parameter, and no "return" to be stated.
 
-const halo = () => `Hello World!`;
+   Untuk function dengan satu parameter dan satu baris return, bisa dibuat simple, parameter tidak perlu (), "return" juga tidak perlu ditulis:
 
-console.log(halo());
+    const example2 = name => `Halo ${name}`;
 
-//output in console:
-// Selamat Malam, Gada
-// 43 Halo Semar
-// Hello World!
+    console.log(example2("John"));
+
+   Function without parameter shall use ()
+   
+   Untuk function tanpa parameter harus digunakan ()
+
+    const halo = () => `Hello World!`;
+
+    console.log(halo());
+ 
+4. This in Arrow Function
+
+   OuterFunction = function expression, InnerFunction = function expression
+   
+   OuterFunction = function expression, InnerFunction = Arrow Function (This is the correct one/ Ini yang benar)
+   
+   OuterFunction = Arrow Function, InnerFunction = Arrow Function
+   
+   OuterFunction = Arrow Function, InnerFunction = Function Expression
+
+
+
 
 
 
