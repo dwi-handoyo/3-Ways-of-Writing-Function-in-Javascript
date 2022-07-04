@@ -5,20 +5,26 @@
 1. Function Declaration
 
     function popup1(name) {
+      
       alert('Halo' + ' ' + name);
+    
     }
+    
     popup1('John');
 
 2. Function Expression
 
     let popup2 = function(name) {
-      alert('Halo' + ' ' + name);
+    
+     alert('Halo' + ' ' + name);
+    
     }
+    
     popup2('John');
 
 3. Arrow Function
 
- a. Multilines
+ a. Multilines Arrow Function
 
     const example1 = (name, time) => {
       return `Good ${time}, ${name}`;
@@ -26,7 +32,7 @@
 
     console.log(example1("John", "Night"));
 
-b. Single Line
+ b. Single Line Arrow Function
 
    Function with only one parameter and one line of return can be simplified. No need parantheses () for parameter, and no "return" to be stated.
 
@@ -44,15 +50,15 @@ b. Single Line
 
     console.log(halo());
  
-4. This in Arrow Function
+ c. "This" in Arrow Function
 
-   OuterFunction = function expression, InnerFunction = function expression
+    OuterFunction = function expression, InnerFunction = function expression
    
-   OuterFunction = function expression, InnerFunction = Arrow Function (This is the correct one/ Ini yang benar)
+    OuterFunction = function expression, InnerFunction = Arrow Function (This is the correct one / Ini yang benar)
    
-   OuterFunction = Arrow Function, InnerFunction = Arrow Function
+    OuterFunction = Arrow Function, InnerFunction = Arrow Function
    
-   OuterFunction = Arrow Function, InnerFunction = Function Expression
+    OuterFunction = Arrow Function, InnerFunction = Function Expression
 
 
 
