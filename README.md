@@ -78,6 +78,55 @@
     
       https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Outer-Arrow-Function-Inner-Function-Expression.js
 
+Summary of Guideline in Creating Functions
+
+a. Object Function Expression + this + Method Array Function -> Result: OK (similar to item h)
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/This-and-Arrow-Function-in-Objects.js (case #1)
+
+b. Object Literal + Method Function Expression -> Result: OK
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/This-and-Arrow-Function-in-Objects.js (case #2a)
+
+c. Object Literal + Method Arrow Function -> Result: Undefined 
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/This-and-Arrow-Function-in-Objects.js (case #2b)
+
+d. Object Literal + Method Function Declaration inside function -> Result: Undefined
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Arrow-Function-in-Object.js (case #1)
+
+e. Object Literal + Method Arrow Function inside function -> Result: OK
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Arrow-Function-in-Object.js (case #2)
+
+f. Object Literal + Method Function Declaration inside function with .bind(this) -> Result: OK
+ 
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Arrow-Function-in-Object.js (case #3)
+
+g. Outer Function: Function Expression + this + Inner Function: Function Expression -> Result: Undefined
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Outer-Function-Expression-Inner-Function-Expression.js
+
+h. Outer Function: Function Expression + this + Inner Function: Arrow Function -> Result: OK (similar to item a)
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Outer-Function-Expression-Inner-Arrow-Function.js
+
+i. Outer Function: Arrow Function + this + Inner Function: Arrow Function -> Result: Nothing (this is not recognized in arrow function (outer))
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Outer-Arrow_funtion-Inner-Arrow-Function.js
+
+j. Outer Function: Arrow Expression + this + Inner Function: Function Expression -> Result: Nothing (this is not recognized in arrow function (outer))
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Outer-Arrow-Function-Inner-Function-Expression.js
+
+k. Arrow Function in map method -> Result: OK
+
+   * https://github.com/dwi-handoyo/3-Ways-of-Writing-Function-in-Javascript/blob/main/Arrow-Function-and-Map-Method-Example.js
+
+
+
+
 
 
 
