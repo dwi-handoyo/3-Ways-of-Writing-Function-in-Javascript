@@ -1,5 +1,6 @@
 
 // CASE #3: OuterFunction = arrow function, InnerFunction = arrow function
+// Object with one method only, can directly execute the method.
 
 // In this case the object will return nothing when created. This case is bad way in creating object.
 
