@@ -23,3 +23,19 @@ student();
 // Hello, my name is undefined, and I am undefined years old.
 // Hai
 // Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+
+// However, if we want to correct the syntax, below codes will work.
+
+const Student1 = function() {
+ this.name = "Jack Brown";
+ this.age = 23;
+ this.sayHello = function() {
+  console.log(`Hello, my name is ${this.name}, and I am ${this.age} years old.`);
+ }
+ return this.sayHello();
+}
+
+Student1();
+
+// output:
+// "Hello, my name is Jack Brown, and I am 23 years old."
