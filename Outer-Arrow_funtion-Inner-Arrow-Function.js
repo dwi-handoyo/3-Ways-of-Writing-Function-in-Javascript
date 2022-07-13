@@ -20,4 +20,18 @@ student();
 // output di console:
 // Nothing, it is because "this" tidak dikenal pada arrow function.
 
+// The above can be modified as below to work:
 
+const Student1 = () => {
+ this.name = "Mike Lewis";
+ this.age = 24;
+ this.sayHello = () => {
+   console.log(`Hi, my name is ${this.name} I am ${this.age} years old. Nice to meet you.`);
+ }
+ return this.sayHello();
+}
+
+Student1();
+
+// output:
+// "Hi, my name is Mike Lewis I am 24 years old. Nice to meet you."
