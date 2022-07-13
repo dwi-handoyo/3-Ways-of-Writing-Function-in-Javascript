@@ -1,5 +1,6 @@
 
 // CASE #2: OuterFunction = function expression, InnerFunction = arrow function
+//  Object with one method only, can directly execute the method.
 
 // In this case the object will return correct value when created. Case #2 is a good implementation.
 
