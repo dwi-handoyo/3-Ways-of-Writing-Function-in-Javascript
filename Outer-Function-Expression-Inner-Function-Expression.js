@@ -8,7 +8,7 @@ const Student = function() {
  this.age = 23;
  console.log(this);
   this.sayHello = function() {
-  console.log(`Hello, my name is ${this.nama}, and I am ${this.umur} years old.`);
+  console.log(`Hello, my name is ${this.name}, and I am ${this.age} years old.`);
   console.log("Hai");
   console.log(this);
  }
