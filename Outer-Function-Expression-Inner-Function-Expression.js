@@ -1,5 +1,6 @@
 
 // CASE #1: OuterFunction = function expression, InnerFunction = function expression
+// Object with one method only
 
 // In this case the object will return undefined value when created. Case #1 not the proper implementation.
 
@@ -39,3 +40,4 @@ Student1();
 
 // output:
 // "Hello, my name is Jack Brown, and I am 23 years old."
+
