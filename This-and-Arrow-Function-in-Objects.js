@@ -53,7 +53,7 @@ const mhs1 = {
 // 24
 // Halo, nama saya Baladewa, dan saya 24 tahun.
 
-const mhs2 = {
+const mhs2a = {
  nama: "Belang",
  umur: 21,
  sayHello: () => {  
@@ -63,7 +63,28 @@ const mhs2 = {
 }
 
 // jika digunakan arrow function, 
-// ketik di console: mhs2.sayHello()
+// ketik di console: mhs2a.sayHello()
 // maka outputnya:
 // Halo, nama saya undefined, dan saya undefined tahun.
 // karena this pada arrow function di object literal akan me-refer pada variable global, bukan pada function scope nya.
+
+// an alternative of the above:
+
+const mhs2b = {
+ nama: "Belang",
+ umur: 21,
+ sayHello: () => {  
+  console.log(`Halo, nama saya ${mhs2.nama}, dan saya ${mhs2.umur} tahun.`);
+}
+}
+
+mhs2b.sayHello();
+
+// output:
+// "Halo, nama saya Belang, dan saya 21 tahun."
+
+
+
+
+
+
